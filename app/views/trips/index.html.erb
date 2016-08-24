@@ -3,7 +3,7 @@
 
   <!-- Events Title -->
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4"><h1>Trips</h1>
+    <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4"><h1>Travel Wish List!</h1>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 indexAddEvents"><%= link_to 'Add New Trip', new_trip_path, class: "redBtn" %></div>
 
@@ -17,7 +17,8 @@
   
   <div class ="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
-    <div class="row indexRowEvent" >
+  <div class="row">  
+    <div class="indexTripCard shadowEffect" >
 
       <!-- image -->
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">    
@@ -26,17 +27,17 @@
 
       <!-- events description -->
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="indexEventTitle"><%= trip.countryname %></div>
-        <div class="indexEventDate"><%= trip.datefrom.strftime("%d %b %Y") %> - <%= trip.dateto.strftime("%d %b %Y") %> </div> 
-        <div class="indexEventDescript"><%= trip.description %> </div>
+        <div class="indexTripTitle"><%= trip.countryname %></div>
+        <div class="indexTripDate"><%= trip.datefrom.strftime("%d %b %Y") %> - <%= trip.dateto.strftime("%d %b %Y") %> </div> 
+        <div class="indexTripDescript"><%= trip.description %> </div>
 
-        <div class="indexEventLinks">     
+        <div class="indexTripLinks">     
           <%= link_to 'View', trip, class:"indexEventLinksBtn" %> &nbsp;
           <%= link_to 'Edit', edit_trip_path(trip), class:"indexEventLinksBtn" %> &nbsp;
           <%= link_to 'Delete', trip, class:"indexEventLinksBtn", method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>  
       </div>
-
+     </div> 
     </div> 
 
   </div>

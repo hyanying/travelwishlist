@@ -27,6 +27,11 @@ footer { margin-top: 100px; }
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 
+h1 
+{
+  font-family: 'Indie Flower',cursive;
+
+}
 
 .redBtn 
 {
@@ -78,36 +83,68 @@ th { border-bottom: 1px solid #DDD; }
 .bottomPadding5px { padding-bottom:5px; }
 .bottomPadding20px { padding-bottom:20px; }
 
+.shadowEffect{ position:relative; }
 
-/* Events Listing /////////////////////////////////////////// */
+.shadowEffect:before, .shadowEffect:after
+{
+  z-index:-1;
+  position:absolute;
+  content:"";
+  bottom:15px;
+  left:10px;
+  width:80%;
+  top:80%;
+  max-width:300px;
+  background:#777;
+  box-shadow:0 15px 10px #000;
+  transform: rotate(-3deg);
+
+  opacity:0.8;
+  -khtml-opacity:0.8;
+  -moz-opacity:0.8;
+  filter:alpha(opacity=80);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+.shadowEffect:after
+{
+  transform:rotate(3deg);
+  right:10px;
+  left:auto;  
+}
+
+/* Trips Listing /////////////////////////////////////////// */
 
 
 .indexAddEvents{float:right; text-align:right;}
 
-.indexRowEvent
+.indexTripCard
 {
-	border:solid 1px #CCC;
-	margin-bottom:15px;
+	border:none;
+  margin:20px 5px 20px 5px;
 	padding:15px 0px 0px 0px; 
 	background-color:white;
+  display:inline-block;
+   
 }
 
-.indexEventDate 
+.indexTripDate 
 {
 	font-size:1em;
-	text-transform: uppercase;
 	margin-bottom:5px;
 	color:#000;
 }
 
-.indexEventTitle
+.indexTripTitle
 {	
-	font-size:1.8em;
+  font-family: 'Indie Flower',cursive;
+	font-size:2em;
 	line-height:1em;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+
 }
 
-.indexEventDescript
+.indexTripDescript
 {
 	font-size:1em;
 	margin-bottom:30px;
@@ -116,7 +153,7 @@ th { border-bottom: 1px solid #DDD; }
 
 }
 
-.indexEventLinks
+.indexTripLinks
 {
 	text-align: left;
 	padding-bottom: 20px;
