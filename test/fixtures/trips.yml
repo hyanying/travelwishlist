@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  countryname: MyString
+  description: MyText
+  datefrom: 2016-08-24
+  dateto: 2016-08-24
+  imageurl: MyString
+
+two:
+  countryname: MyString
+  description: MyText
+  datefrom: 2016-08-24
+  dateto: 2016-08-24
+  imageurl: MyString
