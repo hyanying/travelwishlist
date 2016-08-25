@@ -140,7 +140,7 @@ h1
 .indexTripDate 
 {
   font-family: 'Shadows Into Light Two', cursive;
-  font-size:1em;
+  font-size:1.1em;
   color:#222;
   letter-spacing: 1px;
   margin-bottom:5px;
@@ -150,7 +150,7 @@ h1
 .indexTripDistance
 {
   font-family: 'Shadows Into Light Two', cursive;
-  font-size:1em;
+  font-size:1.1em;
   color:#777;
   margin-bottom:20px;
   
@@ -205,11 +205,12 @@ h1
 
 /* New Event /////////////////////////////////////////// */
 
-.newEventContainer
+.newTripContainer
 {
     background-color:white;
     border:solid 1px #CCC;
     padding: 20px;
+    display:inline-block;
 
 }
 
@@ -221,7 +222,7 @@ h1
 
 /* View Event /////////////////////////////////////////// */
 
-.viewEventContentContainer
+.viewTripContentContainer
 {
     font-size:1.2em;
     text-align:left;
@@ -230,14 +231,14 @@ h1
 
 }
 
-.viewEventButtonsContainer
+.viewTripButtonsContainer
 {
     font-size:1.2em;
     padding-top:30px;
     padding-bottom:20px;
 }
 
-.viewEventButtonHolder
+.viewTripButtonHolder
 {
    padding-bottom:20px;
 
