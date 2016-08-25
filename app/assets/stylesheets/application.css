@@ -32,6 +32,14 @@ h1
   font-family:'Atma',cursive;
 }
 
+a:hover
+{
+  /*background-color:rgba(255,0,0,1.0);*/
+  background-color:transparent;
+  text-decoration: none;
+  color:black;
+
+}
 
 .redBtn 
 {
@@ -199,7 +207,11 @@ h1
 
 }
 
+.glyphicon a:hover
+{
+  box-border:none;
 
+}
 
 /* New Event /////////////////////////////////////////// */
 
