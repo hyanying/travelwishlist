@@ -129,11 +129,22 @@ h1
 .indexTripTitle
 {	
   font-family: 'Shadows Into Light Two', cursive;
-	font-size:2.2em;
+	font-size:1.8em;
 	line-height:1em;
+  margin-top:10px;
   margin-bottom:5px;
   letter-spacing: 1px;  
 
+}
+
+.indexTripDate 
+{
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size:1.3em;
+  color:#222;
+  letter-spacing: 1px;
+  margin-bottom:5px;
+  
 }
 
 .indexTripDistance
@@ -141,21 +152,9 @@ h1
   font-family: 'Shadows Into Light Two', cursive;
   font-size:1.3em;
   color:#777;
-  margin-bottom:5px;
-  
-}
-
-.indexTripDate 
-{
-  font-family: 'Shadows Into Light Two', cursive;
-  font-size:1.4em;
-  color:#222;
-  letter-spacing: 1px;
   margin-bottom:20px;
   
 }
-
-
 
 .indexTripLinks
 {
