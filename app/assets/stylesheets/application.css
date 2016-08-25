@@ -29,7 +29,9 @@ th { border-bottom: 1px solid #DDD; }
 
 h1 
 {
+  font-family:'Atma',cursive;
 }
+
 
 .redBtn 
 {
@@ -132,8 +134,9 @@ h1
 	font-size:1.8em;
 	line-height:1em;
   margin-top:10px;
-  margin-bottom:5px;
-  letter-spacing: 1px;  
+  margin-bottom:10px;
+  letter-spacing: 1px;
+  text-align: center;  
 
 }
 
@@ -144,6 +147,7 @@ h1
   color:#222;
   letter-spacing: 1px;
   margin-bottom:5px;
+  text-align: center;
   
 }
 
@@ -152,38 +156,16 @@ h1
   font-family: 'Shadows Into Light Two', cursive;
   font-size:1.1em;
   color:#777;
-  margin-bottom:20px;
+  margin-bottom:10px;
+  text-align: center;
   
 }
 
 .indexTripLinks
 {
-	padding-bottom: 20px;
+	
 
 }
-
-.indexEventLinksBtn {
-  background: #3498db;
-  -webkit-border-radius: 2;
-  -moz-border-radius: 2;
-  border-radius: 2px;
-  font-family: Arial;
-  color: #000000;
-  font-size: 1em;
-  background: #ffffff;
-  padding: 5px 10px 5px 10px;
-  border: solid #aaa 1px;
-  text-decoration: none;
-
-}
-
-.indexEventLinksBtn:hover {
-  background: #fc6f3c;
-  color: #000000;
-  border: solid #fc6f3c 1px;
-  text-decoration: none;
-}
-
 
 .indexAddEvents
 {
@@ -192,16 +174,32 @@ h1
     padding:30px 0px 0px 0px;
 }
 
-.indexEventDateHidden
+
+.indexGlyphicon
 {
-    visibility: hidden; 
+  font-size:16px;
 }
 
-.indexEventTimeLeft
+.indexGlyphiconLeft
 {
-    margin-bottom: 15px;
-    color:#666;
+  float:left; 
+  width:45%; 
+  padding-left:10px;"
+  text-align:left;
+  padding-bottom: 20px;
 }
+
+.indexGlyphiconRight
+{
+  float:right; 
+  width:45%; 
+  padding-right:10px;"
+  text-align:right;
+  padding-bottom: 20px;
+
+}
+
+
 
 /* New Event /////////////////////////////////////////// */
 
