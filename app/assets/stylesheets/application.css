@@ -210,13 +210,13 @@ h1
     background-color:white;
     border:solid 1px #CCC;
     padding: 20px;
-    display:inline-block;
+   
 
 }
 
-.newEventDescriptionField
+.newTripDescriptionField
 {
-    height: 4em;
+    height: 15em;
 
 }
 

@@ -1,42 +1,73 @@
-<%= form_for(trip) do |f| %>
-  <% if trip.errors.any? %>
+<div class="row newTripContainer">
+
+  <!--side -->
+  <div class="col-lg-3 col-md-0 col-sm-0 col-xs-0"></div>
+
+  <!-- center content -->
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+    <%= form_for(trip) do |f| %>
+
+    <% if trip.errors.any? %>
+
     <div id="error_explanation">
-      <h2><%= pluralize(trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+      <h2><%= pluralize(trip.errors.count, "error") %> prohibited this event from being saved:</h2>
 
       <ul>
-      <% trip.errors.full_messages.each do |message| %>
+        <% event.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
+        <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
 
-  <div class="field">
-    <%= f.label :countryname %>
-    <%= f.text_field :countryname %>
+    <div class="field bottomPadding5px">
+      <%= f.label :"Country" %>
+      <%= f.text_field :countryname, :class => "textField" %>
+    </div>
+
+    <div class="field bottomPadding20px">
+      <%= f.label :"from" %>
+      <%= f.date_select :datefrom %>
+    </div>
+
+    <div class="field bottomPadding20px">
+      <%= f.label :"To" %>
+      <%= f.date_select :dateto %>
+    </div>
+
+    <div class="field bottomPadding5px">
+      <%= f.label :description %>
+      <%= f.text_area :description, :class => "textField newTripDescriptionField" %>
+    </div>
+
+    <div class="field bottomPadding5px">
+      <%= f.label :"Image URL" %>
+      <%= f.text_field :imageurl, :class => "textField" %></br></br>
+
+      Please insert an image url.<br/> 
+      For example, try: http://i.imgur.com/Pim4B7u.jpg <br/><br/>
+      The image should have a minimum width of 1280px.<br/><br/>
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="actions">
+          <%= f.submit :class => "redBtn btn-block" %>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+    </div>
+
+
+    <% end %>
+
+
   </div>
 
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
+  <!--side -->
+  <div class="col-lg-3 col-md-0 col-sm-0 col-xs-0"></div>
 
-  <div class="field">
-    <%= f.label :datefrom %>
-    <%= f.date_select :datefrom %>
-  </div>
-
-  <div class="field">
-    <%= f.label :dateto %>
-    <%= f.date_select :dateto %>
-  </div>
-
-  <div class="field">
-    <%= f.label :imageurl %>
-    <%= f.text_field :imageurl %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
