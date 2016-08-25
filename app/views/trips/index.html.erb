@@ -3,9 +3,9 @@
 
   <!-- Events Title -->
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4"><h1>Travel Wish List!</h1>
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12"><h1>Travel Trip Wish List!</h1>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 indexAddEvents"><%= link_to 'Add New Trip', new_trip_path, class: "redBtn" %></div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 indexAddEvents"><%= link_to 'Add New Trip', new_trip_path, class: "redBtn btn-block text-center" %></div>
 
   </div>
 
@@ -22,14 +22,19 @@
 
       <!-- image -->
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">    
-        <%= image_tag(trip.imageurl, class: "img-responsive text-center") if trip.imageurl.present? %><br/>
+     
+          <%= image_tag(trip.imageurl, class: "img-responsive text-center") if trip.imageurl.present? %>,
+       
       </div>
 
       <!-- events description -->
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+        
         <div class="indexTripTitle"><%= trip.countryname %></div>
+        <div class="indexTripDistance">200 km away</div>
         <div class="indexTripDate"><%= trip.datefrom.strftime("%d %b %Y") %> - <%= trip.dateto.strftime("%d %b %Y") %> </div> 
-        <div class="indexTripDescript"><%= trip.description %> </div>
+
+        
 
         <div class="indexTripLinks">     
           <%= link_to 'View', trip, class:"indexEventLinksBtn" %> &nbsp;

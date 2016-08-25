@@ -29,8 +29,6 @@ th { border-bottom: 1px solid #DDD; }
 
 h1 
 {
-  font-family: 'Indie Flower',cursive;
-
 }
 
 .redBtn 
@@ -128,34 +126,39 @@ h1
    
 }
 
-.indexTripDate 
-{
-	font-size:1em;
-	margin-bottom:5px;
-	color:#000;
-}
-
 .indexTripTitle
 {	
-  font-family: 'Indie Flower',cursive;
-	font-size:2em;
+  font-family: 'Shadows Into Light Two', cursive;
+	font-size:2.2em;
 	line-height:1em;
-	margin-bottom: 5px;
+  margin-bottom:5px;
+  letter-spacing: 1px;  
 
 }
 
-.indexTripDescript
+.indexTripDistance
 {
-	font-size:1em;
-	margin-bottom:30px;
-	line-height:1.3em;
-	color:#555;
-
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size:1.3em;
+  color:#777;
+  margin-bottom:5px;
+  
 }
+
+.indexTripDate 
+{
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size:1.4em;
+  color:#222;
+  letter-spacing: 1px;
+  margin-bottom:20px;
+  
+}
+
+
 
 .indexTripLinks
 {
-	text-align: left;
 	padding-bottom: 20px;
 
 }
