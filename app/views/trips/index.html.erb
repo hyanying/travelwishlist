@@ -36,7 +36,7 @@
 
             <div class="indexTripDate"><%= trip.datefrom.strftime("%d %b %Y") %> - <%= trip.dateto.strftime("%d %b %Y") %> </div> 
 
-            <div class="indexTripDistance">200 km away</div>
+            <div class="indexTripDistance"><%= getDistance (trip.countryname) %> km away</div>
 
             <div class="indexTripLinks"> 
 

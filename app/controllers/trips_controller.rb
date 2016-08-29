@@ -1,10 +1,14 @@
 class TripsController < ApplicationController
+  include Geokit::Geocoders
+  include TripsHelper
+
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
 
   # GET /trips
   # GET /trips.json
   def index
     @trips = Trip.order(:datefrom)
+  
   end
 
   # GET /trips/1
